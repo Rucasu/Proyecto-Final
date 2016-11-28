@@ -1,14 +1,14 @@
 package py.uaa.java.model;
-
+import java.util.Date;
 
 
 public class Registro {
 	//Atributos
 	
-	private int idPC;
+	private int NroPC;
 	private String Detalle;
 	private String Observacion;
-	private String Fecha;
+	private Date Fecha;
 	private String Tecnico;
 	private String Cliente;
 	
@@ -16,10 +16,10 @@ public class Registro {
 	
 	
 	//Constructor
-	public Registro(int idPC, String Detalle,String Observacion, String Fecha,
+	public Registro(int NroPC, String Detalle,String Observacion, Date Fecha,
 			String Tecnico, String Cliente) {
 		super();
-		this.idPC = idPC;
+		this.NroPC = NroPC;
 		this.Detalle = Detalle;
 		this.Observacion = Observacion;
 		this.Fecha = Fecha;
@@ -35,12 +35,12 @@ public class Registro {
 	
 	
 	//getters y setter
-	public int getidPC() {
-		return idPC;
+	public int getNroPC() {
+		return NroPC;
 	}
 
-	public void setidPC(int idPC) {
-		this.idPC = idPC;
+	public void setNroPC(int nroPc) {
+		this.NroPC = nroPc;
 	}
 
 	public String getDetalle() {
@@ -52,12 +52,12 @@ public class Registro {
 	}
 
 	
-	public String getFecha() {
+	public Date getFecha() {
 		return Fecha;
 	}
 
 
-	public void setFecha(String fecha) {
+	public void setFecha(Date fecha) {
 		Fecha = fecha;
 	}
 
